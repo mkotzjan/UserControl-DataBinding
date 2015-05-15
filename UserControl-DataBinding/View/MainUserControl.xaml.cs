@@ -18,9 +18,9 @@ namespace UserControl_DataBinding.View
     /// <summary>
     /// Interaction logic for UserControl.xaml
     /// </summary>
-    public partial class UserControl : UserControl
+    public partial class MainUserControl : UserControl
     {
-        public UserControl()
+        public MainUserControl()
         {
             InitializeComponent();
         }
