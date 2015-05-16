@@ -1,6 +1,7 @@
 ﻿<Window x:Class="UserControl_DataBinding.View.MainView"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:view="clr-namespace:UserControl_DataBinding.View"
         Title="MainView" Height="300" Width="500">
     <Grid>
         <Grid.ColumnDefinitions>
@@ -10,5 +11,6 @@
         <DataGrid Grid.Column="0">
             
         </DataGrid>
+        <view:MainUserControl Grid.Column="1"/>
     </Grid>
 </Window>
