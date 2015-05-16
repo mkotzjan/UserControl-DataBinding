@@ -10,13 +10,5 @@
         <DataGrid Grid.Column="0">
             
         </DataGrid>
-        <Grid Grid.Column="1">
-            <Grid.RowDefinitions>
-                <RowDefinition></RowDefinition>
-                <RowDefinition></RowDefinition>
-            </Grid.RowDefinitions>
-            <TextBox Grid.Row="0"/>
-            <TextBox Grid.Row="1"/>
-        </Grid>
     </Grid>
 </Window>
