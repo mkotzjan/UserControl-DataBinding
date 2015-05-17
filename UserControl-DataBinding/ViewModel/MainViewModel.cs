@@ -30,9 +30,9 @@ namespace UserControl_DataBinding.ViewModel
         }
         public MainViewModel()
         {
-            List<MainModel> model = new List<MainModel>();
-            model.Add(new MainModel { firstname = "Michael", lastname = "Mustermann" });
-
+            List<MainModel> modelList = new List<MainModel>();
+            modelList.Add(new MainModel { firstname = "Michael", lastname = "Mustermann" });
+            RaisePropertyChanged("modelList");
         }
 
         public void RaisePropertyChanged(string prop)
