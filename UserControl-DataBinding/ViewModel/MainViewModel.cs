@@ -8,5 +8,9 @@ namespace UserControl_DataBinding.ViewModel
 {
     class MainViewModel
     {
+        public MainViewModel()
+        {
+
+        }
     }
 }
