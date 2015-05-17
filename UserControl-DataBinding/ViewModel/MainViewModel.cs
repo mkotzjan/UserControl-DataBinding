@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -7,7 +8,7 @@ using UserControl_DataBinding.Model;
 
 namespace UserControl_DataBinding.ViewModel
 {
-    class MainViewModel
+    class MainViewModel : INotifyPropertyChanged
     {
         private List<MainModel> model;
 
@@ -32,5 +33,11 @@ namespace UserControl_DataBinding.ViewModel
             List<MainModel> model = new List<MainModel>();
 
         }
+
+        public void RaisePropertyChanged(string prop)
+        {
+            if (this.PropertyChanged != null) { this.PropertyChanged(this, new PropertyChangedEventArgs(prop)); }
+        }
+        public event PropertyChangedEventHandler PropertyChanged;
     }
 }
