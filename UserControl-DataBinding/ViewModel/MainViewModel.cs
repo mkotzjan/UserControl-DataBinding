@@ -31,6 +31,7 @@ namespace UserControl_DataBinding.ViewModel
         public MainViewModel()
         {
             List<MainModel> model = new List<MainModel>();
+            model.Add(new MainModel { firstname = "Michael", lastname = "Mustermann" });
 
         }
 
